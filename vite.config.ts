@@ -5,6 +5,17 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
+  server: {
+    host: true, // Allow external access
+    allowedHosts: [
+      "eb2a-1-22-168-165.ngrok-free.app",
+      "localhost" // Keep local access
+    ],
+    hmr: {
+      clientPort: 443 // Required for ngrok HTTPS
+    }
+  },
+
   plugins: [
     react(),
     runtimeErrorOverlay(),
