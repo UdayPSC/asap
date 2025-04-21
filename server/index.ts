@@ -8,7 +8,9 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "https://eb2a-1-22-168-165.ngrok-free.app",
-    "http://localhost:8080"
+    "http://localhost:8080",
+    "https://asap-1iex.onrender.com",
+    // Consider adding your Render domain here too
   ],
   credentials: true
 }));
@@ -64,14 +66,17 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  // ALWAYS serve the app on port 5000
-  // this serves both the API and the client.
-  // It is the only port that is not firewalled.
-  const port = 8080;
-  server.listen({
+  // Use PORT from environment variable (provided by Render) or fallback to 10000
+  const port = process.env.PORT || 10000;
+  
+  const serverInstance = server.listen({
     port,
     host: "0.0.0.0"  // ✅ Accepts external connections
   }, () => {
     log(`serving on port ${port}`);
   });
+  
+  // Add timeout settings to prevent connection issues
+  serverInstance.keepAliveTimeout = 120000; // 2 minutes
+  serverInstance.headersTimeout = 120000; // 2 minutes
 })();
