@@ -23,7 +23,7 @@ export function Footer() {
           </a>
         </div>
         <p className="mt-4 text-center text-base text-slate-500">
-          &copy; {new Date().getFullYear()} ASAP Cane Delivery. Created by A&U. Email: akshaypratapsingh12345@gmail.com
+          &copy; {new Date().getFullYear()} ASAP Water Jars Delivery. Created by Uday. Email: upsc26112004@gmail.com
         </p>
       </div>
     </footer>

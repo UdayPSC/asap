@@ -75,7 +75,7 @@ export function OrderItem({ order, isOwner }: OrderItemProps) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.3 9.3a4 4 0 0 0-5.66-5.66M7.3 7.3a4 4 0 0 0 5.66 5.66" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9" />
               </svg>
-              <p>{order.quantity} Water Cane{order.quantity > 1 ? 's' : ''}</p>
+              <p>{order.quantity} Water Jar{order.quantity > 1 ? 's' : ''}</p>
             </div>
             <div className="mt-2 flex items-center text-sm text-slate-500 sm:mt-0 sm:ml-6">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="flex-shrink-0 mr-1.5 h-4 w-4 text-slate-400">

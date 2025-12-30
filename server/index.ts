@@ -10,7 +10,7 @@ app.use(cors({
     "https://eb2a-1-22-168-165.ngrok-free.app",
     "http://localhost:8080",
     "https://asap-1iex.onrender.com",
-    // Consider adding your Render domain here too
+
   ],
   credentials: true
 }));

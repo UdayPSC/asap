@@ -60,7 +60,7 @@ export function OrderDetails({ order, isOpen, onClose, customer }: OrderDetailsP
             <h4 className="text-sm font-medium text-slate-900">Order Details</h4>
             <div className="mt-1 border-t border-b border-slate-200 py-2">
               <div className="flex justify-between text-sm">
-                <span>Water Canes:</span>
+                <span>Water Jars:</span>
                 <span className="font-medium">{order.quantity}</span>
               </div>
               <div className="flex justify-between text-sm pt-1">

@@ -15,9 +15,9 @@ export default function LandingPage() {
           {/* Hero Section */}
           <div className="bg-white overflow-hidden shadow-xl rounded-lg">
             <div className="p-6 sm:p-10 bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-              <h1 className="text-3xl sm:text-4xl font-bold">Fresh Water Cane Delivery - When You Need It</h1>
+              <h1 className="text-3xl sm:text-4xl font-bold">Fresh Water Jar Delivery - When You Need It</h1>
               <p className="mt-3 text-lg sm:text-xl max-w-3xl">
-                Get pure water delivered to your doorstep in minutes. ASAP Cane Delivery provides the fastest and most reliable water delivery service in your area.
+                Get pure water delivered to your doorstep in minutes. ASAP Water Jar Delivery provides the fastest and most reliable water delivery service in your area.
               </p>
               <div className="mt-8">
                 <Button variant="secondary" asChild>
@@ -29,7 +29,7 @@ export default function LandingPage() {
 
           {/* Features Section */}
           <div className="mt-12">
-            <h2 className="text-2xl font-bold text-slate-900">Why Choose ASAP Cane Delivery?</h2>
+            <h2 className="text-2xl font-bold text-slate-900">Why Choose ASAP Water Jar Delivery?</h2>
             <div className="mt-6 grid gap-6 grid-cols-1 md:grid-cols-3">
               {/* Feature 1 */}
               <div className="bg-white shadow rounded-lg p-6">
@@ -37,7 +37,7 @@ export default function LandingPage() {
                   <FaBolt className="text-xl" />
                 </div>
                 <h3 className="text-lg font-medium text-slate-900">Lightning Fast Delivery</h3>
-                <p className="mt-2">Get your water canes delivered within 30 minutes of placing your order, guaranteed.</p>
+                <p className="mt-2">Get your water jars delivered within 30 minutes of placing your order, guaranteed.</p>
               </div>
               
               {/* Feature 2 */}
@@ -46,7 +46,7 @@ export default function LandingPage() {
                   <FaHandHoldingWater className="text-xl" />
                 </div>
                 <h3 className="text-lg font-medium text-slate-900">Pure & Safe Water</h3>
-                <p className="mt-2">All our water canes go through rigorous quality checks to ensure purity and safety.</p>
+                <p className="mt-2">All our water jars go through rigorous quality checks to ensure purity and safety.</p>
               </div>
               
               {/* Feature 3 */}
@@ -107,7 +107,7 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </div>
-                <p className="mt-4 text-slate-700">"ASAP Cane Delivery has been a lifesaver for my office. We never run out of water anymore, and the ease of scheduling recurring deliveries is fantastic!"</p>
+                <p className="mt-4 text-slate-700">"ASAP Water Jar Delivery has been a lifesaver for my office. We never run out of water anymore, and the ease of scheduling recurring deliveries is fantastic!"</p>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function LandingPage() {
           {/* Feedback Form */}
           <div className="mt-12 bg-white shadow rounded-lg p-6">
             <h2 className="text-2xl font-bold text-slate-900">We Value Your Feedback</h2>
-            <p className="mt-2 text-slate-700">Help us improve our service by sharing your experience with ASAP Cane Delivery.</p>
+            <p className="mt-2 text-slate-700">Help us improve our service by sharing your experience with ASAP Water Jar Delivery.</p>
             
             <div className="mt-6">
               <FeedbackForm />

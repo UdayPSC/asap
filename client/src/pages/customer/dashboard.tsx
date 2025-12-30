@@ -32,7 +32,7 @@ export default function CustomerDashboard() {
               icon={<ShoppingCart size={20} />}
               title="New Order"
               subtitle="Place an Order"
-              linkText="Order water canes"
+              linkText="Order water jars"
               linkHref="/customer/place-order"
               iconBgColor="bg-blue-100"
               iconColor="text-blue-600"

@@ -179,7 +179,7 @@ export function ShopSettingsForm() {
                 name="canePrice"
                 render={({ field }) => (
                   <FormItem className="col-span-6 sm:col-span-3">
-                    <FormLabel>Water Cane Price (₹)</FormLabel>
+                    <FormLabel>Water Jar Price (₹)</FormLabel>
                     <FormControl>
                       <div className="relative rounded-md shadow-sm">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -209,9 +209,9 @@ export function ShopSettingsForm() {
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem value="1">1 Cane</SelectItem>
-                        <SelectItem value="2">2 Canes</SelectItem>
-                        <SelectItem value="3">3 Canes</SelectItem>
+                        <SelectItem value="1">1 Jar</SelectItem>
+                        <SelectItem value="2">2 Jars</SelectItem>
+                        <SelectItem value="3">3 Jars</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage />

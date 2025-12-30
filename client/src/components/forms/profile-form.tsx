@@ -174,7 +174,7 @@ export function ProfileForm() {
                       <Textarea rows={3} {...field} />
                     </FormControl>
                     <FormDescription>
-                      This address will be used for your water cane deliveries.
+                      This address will be used for your water jars deliveries.
                     </FormDescription>
                     <FormMessage />
                   </FormItem>

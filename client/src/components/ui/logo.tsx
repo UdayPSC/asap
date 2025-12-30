@@ -17,7 +17,7 @@ export function Logo({ className }: LogoProps) {
   return (
     <Link href={redirectUrl} className={`flex items-center ${className || ""}`}>
       <FaWater className="mr-2 text-primary h-5 w-5" />
-      <span className="text-primary font-bold text-xl">ASAP Cane Delivery</span>
+      <span className="text-primary font-bold text-xl">ASAP Water Jar Delivery</span>
     </Link>
   );
 }

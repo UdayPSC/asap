@@ -111,8 +111,8 @@ export default function AuthPage() {
                   </h2>
                   <p className="text-sm text-slate-600 mt-1">
                     {userType === "customer" 
-                      ? "Order water canes quickly and easily" 
-                      : "Manage your water cane delivery business"}
+                      ? "Order water jars quickly and easily" 
+                      : "Manage your water jar delivery business"}
                   </p>
                 </div>
                 

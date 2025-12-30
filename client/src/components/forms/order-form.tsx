@@ -119,8 +119,8 @@ export function OrderForm() {
       openRazorpayCheckout({
         key: process.env.RAZORPAY_KEY_ID || "rzp_test_YourTestKeyHere",
         amount: orderDetails.amount * 100,
-        name: "ASAP Cane Delivery",
-        description: `Water Cane Order - ${orderDetails.quantity} Canes`,
+        name: "ASAP Water Jars Delivery",
+        description: `Water jars Order - ${orderDetails.quantity} Jars`,
         prefill: {
           name: user?.name,
           email: user?.email,
@@ -151,7 +151,7 @@ export function OrderForm() {
               name="quantity"
               render={({ field }) => (
                 <FormItem className="sm:col-span-3">
-                  <FormLabel>Water Cane Quantity</FormLabel>
+                  <FormLabel>Water Jar Quantity</FormLabel>
                   <Select 
                     onValueChange={field.onChange} 
                     defaultValue={field.value}
@@ -162,11 +162,11 @@ export function OrderForm() {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="1">1 Cane</SelectItem>
-                      <SelectItem value="2">2 Canes</SelectItem>
-                      <SelectItem value="3">3 Canes</SelectItem>
-                      <SelectItem value="4">4 Canes</SelectItem>
-                      <SelectItem value="5">5 Canes</SelectItem>
+                      <SelectItem value="1">1 Jar</SelectItem>
+                      <SelectItem value="2">2 Jars</SelectItem>
+                      <SelectItem value="3">3 Jars</SelectItem>
+                      <SelectItem value="4">4 Jars</SelectItem>
+                      <SelectItem value="5">5 Jars</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
@@ -179,7 +179,7 @@ export function OrderForm() {
               <FormLabel>Price</FormLabel>
               <div className="mt-1 flex items-center">
                 <span className="text-lg font-medium text-slate-900">₹{canePrice.toFixed(2)}</span>
-                <span className="ml-2 text-sm text-slate-500">per cane</span>
+                <span className="ml-2 text-sm text-slate-500">per jar</span>
               </div>
             </div>
             
@@ -267,7 +267,7 @@ export function OrderForm() {
               <div className="border-t border-b border-slate-200 py-4">
                 <div className="flex justify-between">
                   <span className="text-sm text-slate-500">Items:</span>
-                  <span className="text-sm font-medium text-slate-900">{orderDetails.quantity} Water Cane{orderDetails.quantity > 1 ? 's' : ''}</span>
+                  <span className="text-sm font-medium text-slate-900">{orderDetails.quantity} Water Jar{orderDetails.quantity > 1 ? 's' : ''}</span>
                 </div>
                 <div className="flex justify-between mt-2">
                   <span className="text-sm text-slate-500">Total Amount:</span>
